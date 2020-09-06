@@ -68,7 +68,53 @@ body {
   padding: 10px;
 }
 
+button {
+  min-height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgb(200, 200, 200);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: none;
+}
+
+.operator {
+  color: white;
+  background: gray;
+  font-size: 30px;
+}
+
+.clear {
+  background: rgb(241, 35, 35);
+  color: white;
+}
+
+.clear:hover {
+  filter: brightness(90%);
+}
+
 .equals-sign {
   grid-column: -2;
   grid-row: 2 / span 4;
+  background: rgb(13, 206, 87);
+}
+
+/* Media Queries */
+/* Large Smartphone Vertical */
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
 }
