@@ -1,8 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #45b649, #dce35b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.calculator {
+  background: whitesmoke;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+/* Display */
+.calculator-display {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 12px 12px 0 0;
+}
+
+.calculator-display h1 {
+  margin: 0;
+  padding: 25px;
+  font-size: 45px;
+  font-weight: 100;
+  overflow-x: auto;
+  letter-spacing: 0.13rem;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
