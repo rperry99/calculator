@@ -76,6 +76,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   background: rgb(200, 200, 200);
+  user-select: none;
 }
 
 button:hover {
